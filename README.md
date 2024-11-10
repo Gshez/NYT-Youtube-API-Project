@@ -46,7 +46,7 @@ The data is stored in a CSV file with the following columns:
 
 ![Diagrama en blanco](https://github.com/user-attachments/assets/b9bb58e7-cd71-46d4-acff-5c43253f1803)
 
-For a closer look at the ETL process please refer to the Python code attached to this repository.
+For a closer look at the ETL process, please take a look at the Python code attached to this repository.
 
 &nbsp;&nbsp;
 ## Data Extraction
@@ -68,7 +68,7 @@ youtube = build(
 
 ```
 
-After initializing the API Key, I could build a function using API request and obtaining the channel stats of each channel id, in this case it was only The nEw York Times.
+After initializing the API Key, I could build a function using API request and obtaining the channel stats of each channel id, in this case it was only The New York Times.
 
 ```python
 def get_channel_stats(youtube, channel_ids):

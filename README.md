@@ -44,7 +44,7 @@ The data is stored in a CSV file with the following columns:
 &nbsp;&nbsp;
 ## Project Workflow :rocket:
 
-![Diagrama en blanco](https://github.com/user-attachments/assets/b9bb58e7-cd71-46d4-acff-5c43253f1803)
+![NYT-Youtube-API-Project](Folder_Images/Process.png)
 
 For a closer look at the ETL process, please take a look at the Python code attached to this repository.
 
@@ -137,7 +137,7 @@ def get_video_details(youtube, video_ids):
 
 This is the output:
 
-![image](https://github.com/user-attachments/assets/64b87b2a-9bf8-4b7f-bea1-c4280fec3a20)
+![NYT-Youtube-API-Project](Folder_Images/Dataset.png)
 
 
 
@@ -147,7 +147,7 @@ This is the output:
 ### Bar Plot: Best Performing Videos
 &nbsp;&nbsp;
 
-![image](https://github.com/user-attachments/assets/f0af8cb6-b125-4ac9-98f7-f430179ce6e0)
+![NYT-Youtube-API-Project](Folder_Images/Barplot.png)
 
 **Insights:** 
 - In 2024, the most engaging video on the New York Times YouTube channel was uploaded in September and focused on predictions for the upcoming presidential elections. It achieved over 3 million views and received more than 18,000 comments.
@@ -156,7 +156,7 @@ This is the output:
 ### Bar Plot: Least Viewed Videos
 &nbsp;&nbsp;
 
-![image](https://github.com/user-attachments/assets/cf69c72a-9ef7-4831-80cd-4f83601d11ae)
+![NYT-Youtube-API-Project](Folder_Images/Barplott_2.png)
 
 **Insights:** 
 - In 2024, the least viewed videos reached less than 10,000 views and less engaging comments. The video about how Hurricane Helene reshaped North Carolina elections reached less than 6,000 views.
@@ -165,7 +165,7 @@ This is the output:
 ### Scatter Plot: Plotting Views vs. Comments and Views vs. Likes
 &nbsp;&nbsp;
 
-![image](https://github.com/user-attachments/assets/17e2869f-424d-40e8-a9ac-e2cdc27e4c37)
+![NYT-Youtube-API-Project](Folder_Images/Scatter.png)
 
 **Insights:**
 - Videos that generate more views can also lead to increased discussions and comments. These visualizations demonstrate videos that attract more viewers tend to receive more likes. As viewers engage with a video, they are often motivated to express their opinions or ask questions, resulting in a higher number of comments.
@@ -173,7 +173,7 @@ This is the output:
 &nbsp;&nbsp;
 ### Histogram: Video Duration
 &nbsp;&nbsp;
-![image](https://github.com/user-attachments/assets/1fe5beba-9f76-42f5-b40e-e558a25e8119)
+![NYT-Youtube-API-Project](Folder_Images/Histogram.png)
 
 **Insights:**
 - On The New York Times YouTube channel, video duration averages around 3 minutes, though many videos on the platform extend beyond 10 minutes.
@@ -181,7 +181,7 @@ This is the output:
 &nbsp;&nbsp;
 ### WordCloud: Trending Topics on The NYT Youtube Channel
 &nbsp;&nbsp;
-![image](https://github.com/user-attachments/assets/ca0decc0-d752-4e51-a9f6-0b23919e7673)
+![NYT-Youtube-API-Project](Folder_Images/Wordcloud.png)
 
 **Insights:**
 - In 2024, key topics of discussion included the U.S. presidential elections, with a focus on political figures like Kamala Harris, Joe Biden, and Donald Trump. Additionally, global conflicts such as the Middle East crisis and natural disasters like Hurricane Helene were significant subjects of conversation.
@@ -189,7 +189,7 @@ This is the output:
 &nbsp;&nbsp;
 ### Upload Schedule
 &nbsp;&nbsp;
-![image](https://github.com/user-attachments/assets/3b2ee329-0cfb-4798-b1d4-9281537c4939)
+![NYT-Youtube-API-Project](Folder_Images/Schedule.png)
 
 **Insights:**
 - The majority of videos published on The New York Times YouTube channel are released on Tuesdays, Thursdays, and Fridays.

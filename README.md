@@ -51,89 +51,13 @@ For a closer look at the ETL process, please take a look at the Python code atta
 &nbsp;&nbsp;
 ## Data Extraction
 
-To obtain the dataset it was necessary to obtain an API Key from Google Cloud.
+To obtain the dataset it was necessary to obtain an API Key from Google Cloud. Please take a look at the Python code attached to this repository. After initializing the API Key, I could build a function using API request and obtaining the channel stats of each channel id, in this case it was only The New York Times.
 
-```python
-from googleapiclient.discovery import build
 
-api_key = ''
-channel_ids = ['UCqnbDFdCpuN8CMEg0VuEBqA']
-
-api_service_name = "youtube"
-api_version = "v3"
-
-    # Get credentials and create an API client
-youtube = build(
-    api_service_name, api_version, developerKey=api_key)
-
-```
-
-After initializing the API Key, I could build a function using API request and obtaining the channel stats of each channel id, in this case it was only The New York Times.
-
-```python
-def get_channel_stats(youtube, channel_ids):
-    all_data = []  # Initialize all_data list inside the function
-
-    # Make the API request
-    request = youtube.channels().list(
-        part="snippet,contentDetails, statistics",
-        id=','.join(channel_ids)
-    )
-    response = request.execute()
-
-    # Loop through items
-    for item in response['items']:
-        data = {
-            'Channel_Name': item['snippet']['title'],
-            'Subscribers': item['statistics']['subscriberCount'],
-            'Views': item['statistics']['viewCount'],
-            'Total_Videos': item['statistics']['videoCount'],
-            'Playlist_Id': item['contentDetails']['relatedPlaylists']['uploads']
-        }
-        all_data.append(data)  # Append data to all_data
-
-    return pd.DataFrame(all_data)  # Return the DataFrame
-
-channel_stats = get_channel_stats(youtube, channel_ids)
-```
-
-This is the output:
-
-![image](https://github.com/user-attachments/assets/46e6ad32-b161-4b41-bdbb-1676ea18433e)
 
 
 After retrieving the channel id of The New York Times from Youtube, it was necessary to create a function to extract statistics from each video in the Youtube Channel.
 
-```python
-def get_video_details(youtube, video_ids):
-    all_video_info = []
-
-    for i in range(0, len(video_ids), 50):
-        request = youtube.videos().list(
-            part="snippet,contentDetails,statistics",
-            id=','.join(video_ids[i:i+50])
-        )
-        response = request.execute()
-
-        for video in response['items']:
-            stats_to_keep = {
-                'snippet': ['channelTitle', 'title', 'description', 'tags', 'publishedAt'],
-                'statistics': ['viewCount', 'likeCount', 'favoriteCount', 'commentCount'],
-                'contentDetails': ['duration', 'definition', 'caption']
-            }
-            video_info = {'video_id': video['id']}
-
-            for k in stats_to_keep.keys():
-                for v in stats_to_keep[k]:
-                    try:
-                        video_info[v] = video[k][v]
-                    except KeyError:
-                        video_info[v] = None
-
-            all_video_info.append(video_info)
-
-    return pd.DataFrame(all_video_info)
-```
 
 This is the output:
 

@@ -48,7 +48,7 @@ The data is stored in a CSV file with the following columns:
 
 ![NYT-Youtube-API-Project](Folder_Images/Process.png)
 
-For a closer look at the ETL process, please take a look at the Python code attached to this repository.
+For a closer look at the ETL process, please take a look at the [Python code](nyt_youtube_api_project.ipynb) attached to this repository.
 
 &nbsp;&nbsp;
 ## Data Extraction

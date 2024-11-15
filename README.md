@@ -53,12 +53,12 @@ For a closer look at the ETL process, please take a look at the [Python code](ny
 &nbsp;&nbsp;
 ## Data Extraction
 
-To obtain the dataset it was necessary to obtain an API Key from Google Cloud. Please take a look at the Python code attached to this repository. After initializing the API Key, I could build a function using API request and obtaining the channel stats of each channel id, in this case it was only The New York Times.
+To obtain the dataset it was necessary to obtain an API Key from Google Cloud. Please take a look at the [Python code](nyt_youtube_api_project.ipynb) attached to this repository. After initializing the API Key, I could build a function using API request and obtaining the channel stats of each channel id, in this case, it was only The New York Times.
 
 
 
 
-After retrieving the channel id of The New York Times from Youtube, it was necessary to create a function to extract statistics from each video in the Youtube Channel.
+After retrieving the channel ID of The New York Times from YouTube, it was necessary to create a function to extract statistics from each video in the YouTube channel.
 
 
 This is the output:

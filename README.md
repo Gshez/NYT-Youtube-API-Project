@@ -1,7 +1,7 @@
 ## Youtube Engagement Metrics for The New York Times :newspaper:
 By Gabriela Sanchez 
 
-October 2024
+Fall 2024
 
 ## Project Tools :wrench:
 

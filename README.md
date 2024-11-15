@@ -3,6 +3,8 @@ By Gabriela Sanchez
 
 Fall 2024
 
+Updated November 2024
+
 ## Project Tools :wrench:
 
 **Project goal:**  The goal of this project is to obtain data about all the YouTube videos from the New York Times channel using an API Key to visualize their most recent topics in 2024. In addition, it measures the performance of the most watched videos and their worst-performing videos during this year. 

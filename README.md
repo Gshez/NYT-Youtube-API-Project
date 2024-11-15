@@ -30,11 +30,11 @@ This project utilizes the following datasets:
 This dataset contains details about YouTube videos posted by The New York Times in 2024, capturing key metrics like views, likes, comments, and publication dates. Each entry includes metadata (e.g., video ID, title, description, and tags), engagement metrics (viewCount, likeCount, commentCount), and specific video details, such as duration, video definition (e.g., HD), and whether captions are available. This dataset provides a clear snapshot of content performance and viewer engagement, useful for analyzing video trends and audience interests.
 
 The data is stored in a CSV file with the following columns:
-- `video_id`: Unique identifier for each video
+- `video_id`: Unique identifier for each Youtube video
 - `channelTitle`: Name of the Youtube channel
-- `title`: Title of the video
-- `description`: Description of the video
-- `tags`: Tags about the video
+- `title`: Title of the Youtube video
+- `description`: Description of the Youtube video
+- `tags`: Tags of Youtube video
 - `publishedAt`: Date when the video was published
 -  `viewCount`: Number of Views
 -  `likeCount`: Number of Likes

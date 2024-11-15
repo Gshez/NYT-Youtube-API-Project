@@ -73,7 +73,7 @@ This is the output:
 ### Bar Plot: Best Performing Videos
 &nbsp;&nbsp;
 
-![NYT-Youtube-API-Project](Folder_Images/Barplot.png)
+![NYT-Youtube-API-Project](Folder_Images/Barplot_Recent_November.png)
 
 **Insights:** 
 - In 2024, the most engaging video on the New York Times YouTube channel was uploaded in September and focused on predictions for the upcoming presidential elections. It achieved over 3 million views and received more than 18,000 comments.
@@ -82,7 +82,7 @@ This is the output:
 ### Bar Plot: Least Viewed Videos
 &nbsp;&nbsp;
 
-![NYT-Youtube-API-Project](Folder_Images/Barplott_2.png)
+![NYT-Youtube-API-Project](Folder_Images/Barplot_Least_Viewed_November.png)
 
 **Insights:** 
 - In 2024, the least viewed videos reached less than 10,000 views and less engaging comments. The video about how Hurricane Helene reshaped North Carolina elections reached less than 6,000 views.
